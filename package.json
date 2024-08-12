@@ -1,0 +1,40 @@
+{
+  "name": "cap_sanity_automation",
+  "version": "1.0.0",
+  "description": "This Project contain Playwright based Automation Framework for CAP Sanity Test Cases.",
+  "main": "index.js",
+  "scripts": {
+    "prelive": "npx cross-env NODE_ENV=ecp-prelive.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js --tags @ECMember_OneWay_LongHaul_Cash_PNRBooking",
+    "capdev": "npx cross-env NODE_ENV=capdev665.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js --tags @ECMember_OneWay_ShortHaul_Cash_PNRBooking",
+    "Regression": "npx cross-env PLAYWRIGHT_HEADLESS=false NODE_ENV=ecp-regression3.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js --tags @ECMember_RoundTrip_Longhaul_Cash_PNRBooking",
+    "Regression:headless": "npx cross-env PLAYWRIGHT_HEADLESS=true NODE_ENV=ecp-regression3.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js --tags @ECMember_RoundTrip_Longhaul_Cash_PNRBooking",
+    "test": "npx cross-env NODE_ENV=capdev823.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js",
+    "report:cucumberHTML": "node cucumber-report.config.js",
+    "report:allure:generate": "npx allure generate ./test_results/allure-results --clean",
+    "report:allure:open": "npx allure open allure-report",
+    "report:allure:direct": "npx allure serve ./test_results/allure-results --clean",
+    "deletereports:windows": "Remove-Item test_results/, allure-report/ -Recurse",
+    "debug": "node --inspect-brk=5858 ./node_modules/cucumber/bin/cucumber.js --profile TEST -t '@mmb'"
+  },
+  "keywords": [],
+  "author": "Ankurr Saxena",
+  "license": "Coforge Ltd.",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.3.0",
+    "allure-commandline": "^2.23.1",
+    "allure-cucumberjs": "^2.4.0",
+    "allure-js-commons": "^2.4.0",
+    "axios": "^1.6.8",
+    "chai": "^4.3.7",
+    "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^7.1.1",
+    "playwright": "^1.36.2",
+    "prettier": "^3.0.0",
+    "qs": "^6.12.1",
+    "winston": "^3.11.0"
+  },
+  "environments": {
+    "prelive-ba": "https://ecp-prelive.baplc.com/",
+    "prelive-mmb": "https://ecp-prelive.baplc.com/travel/managebooking/public/en_gb"
+  }
+}

@@ -1,0 +1,146 @@
+{
+    "userType": {
+        "BARC": {
+            "title": "Miss",
+            "firstName": "Test",
+            "lastName": "Fernandez",
+            "titleAndSurname": "Miss Fernandez",
+            "username": "ruby@gmail.com",
+            "password": "Test@123",
+            "type": "barc",
+            "tier": "",
+            "isCorporate": false
+        },
+        "BARC2": {
+            "title": "Mr",
+            "firstName": "Greg",
+            "lastName": "North",
+            "titleAndSurname": "Mr North",
+            "username": "gregnorth2007@hotmail.co.uk",
+            "password": "test@123",
+            "type": "barc",
+            "tier": "",
+            "isCorporate": false
+        },
+        "BARC3": {
+            "title": "Prof",
+            "firstName": "Test",
+            "lastName": "Mahak",
+            "titleAndSurname": "Prof Mahak",
+            "username": "bogathivissu@gmail.com",
+            "password": "vissu007",
+            "type": "barc",
+            "tier": "",
+            "isCorporate": false
+        },
+        "Blue": {
+            "title": "Ms",
+            "firstname": "Test",
+            "lastname": "Victory",
+            "titleAndSurname": "Ms Victory",
+            "username": "00008351",
+            "password": "Test@123",
+            "type": "execclub",
+            "tier": "blue",
+            "isCorporate": false
+        },
+        "Blue2": {
+            "title": "Miss",
+            "firstname": "Blue",
+            "lastname": "HHA",
+            "titleAndSurname": "Miss HHA",
+            "username": "10347350",
+            "password": "test123",
+            "type": "execclub",
+            "tier": "blue",
+            "isCorporate": false
+        },
+        "Bronze": {
+            "titleAndSurname": "",
+            "username": "45171806",
+            "password": "Password123",
+            "type": "execclub",
+            "tier": "bronze",
+            "isCorporate": false
+        },
+        "Silver": {
+            "titleAndSurname": "Miss Kapoor",
+            "username": "45172371",
+            "password": "test123",
+            "type": "execclub",
+            "tier": "silver",
+            "isCorporate": false
+        },
+        "Gold": {
+            "titleAndSurname": "Mr Gold",
+            "firstname": "Ecfour",
+            "lastname": "Gold",
+            "username": "00004938",
+            "password": "Test12345",
+            "type": "execclub",
+            "tier": "gold",
+            "isCorporate": false
+        },
+        "UK Gold": {
+            "titleAndSurname": "Dr Narayan",
+            "firstname": "Santhosh",
+            "lastname": "Narayan",
+            "username": "00002591",
+            "password": "Test@123",
+            "type": "execclub",
+            "tier": "gold",
+            "isCorporate": false
+        },
+        "Gold2": {
+            "titleAndSurname": "",
+            "firstname": "",
+            "lastname": "",
+            "username": "10418007",
+            "password": "test123",
+            "type": "execclub",
+            "tier": "gold",
+            "isCorporate": false
+        },
+        "premierGLP": {
+            "title": "Mr",
+            "firstname": "Richard",
+            "lastname": "Reese",
+            "titleAndSurname": "Mr Reese",
+            "username": "00008376",
+            "password": "Test@123",
+            "type": "execclub",
+            "tier": "premier",
+            "isCorporate": false
+        },
+        "hotlinePrelive": {
+            "title": "Dr",
+            "firstname": "Adult",
+            "lastname": "PRUEBAUNO",
+            "titleAndSurname": "Dr PRUEBAUNO",
+            "username": "u122807",
+            "password": "Thursday11",
+            "type": "cug",
+            "tier": "n/a",
+            "isCorporate": false,
+            "isConcur": false,
+            "isCug": true,
+            "dob": "29FEB1964",
+            "startUrl": "https://cug-prelive.baplc.com/travel/fx/public/cugAlias-ox231?source=CUG_ox231&eId=111044"
+        },
+        "liveMirror": {
+            "title": "Mrs",
+            "firstname": "Karen",
+            "lastname": "Davidson",
+            "titleAndSurname": "Mrs Davidson",
+            "username": "45765049",
+            "password": "Test0506",
+            "type": "blue",
+            "tier": "n/a",
+            "isCorporate": false,
+            "isConcur": false,
+            "isCug": false,
+            "dob": "29FEB1964",
+            "startUrl": "https://cug-prelive.baplc.com/travel/fx/public/cugAlias-ox231?source=CUG_ox231&eId=111044"
+        }
+    }
+}

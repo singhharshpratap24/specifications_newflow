@@ -1,0 +1,88 @@
+{
+    "INET_MEMBER": {},
+    "TIER_MEMBER": {
+        "UK_GOLD": {
+            "username": "00002591",
+            "password": "Test@123"
+        },
+        "R_GOLD": {
+            "username": "00003570",
+            "password": "Test@123"
+        },
+        "member_with_FnF_list": {
+            "username": "00030978",
+            "password": "test@123"
+        },
+        "Blue": {
+            "username": "00002588",
+            "password": "Test@123"
+        },
+        "Bronze": {
+            "username": "00030996",
+            "password": "test@123"
+        },
+        "Gold": {
+            "username": "00004938",
+            "password": "Test12345"
+        },
+        "UK_Resident": {
+            "username": "00081507",
+            "password": "test@123"
+        },
+        "Silver_member_with_thirdPartyNominee": {
+            "username": "00063874",
+            "password": "test@123"
+        },
+        "Spain_Blue": {
+            "username": "00080700",
+            "password": "Test@123"
+        },
+        "Gold_R": {
+            "username": "00081442",
+            "password": "Test@1234",
+            "birthday": "17",
+            "birthmonth": "10",
+            "birthyear": "1997"
+        },
+        "Gold_R_R": {
+            "username": "00059927",
+            "password": "fire@123"
+        },
+        "US_Silver": {
+            "username": "00081180",
+            "password": "test@123"
+        },
+        "on_business": {
+            "membershipnumber": "AB12345678",
+            "selectBusinesLoyalityProgramme": "On Business"
+        },
+        "US_Gold": {
+            "username": "00004855",
+            "password": "test@123",
+            "email": "uniquemailh128@ba.com",
+            "name": "Mr Test Point"
+        },
+        "UK_Premier": {
+            "username": "00064233",
+            "password": "test@123",
+            "email": "nishtha.goel@ba.com",
+            "name": "Mr One Test"
+        },
+        "PREMIER_R": {
+            "username": "00050220",
+            "password": "test@123"
+        },
+        "UK_Silver": {
+            "username": "00138093",
+            "password": "test@123",
+            "email": "uniquemailq85@ba.com",
+            "name": "Mr Alok Test"
+        },
+        "Austria_Gold": {
+            "username": "00138026",
+            "password": "test@123",
+            "email": "uniquemailq83@ba.com",
+            "name": "Mr Kamal Test"
+        }
+    }
+}

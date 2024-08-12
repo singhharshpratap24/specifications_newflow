@@ -1,0 +1,30 @@
+module.exports = {
+  ECPriceQuote: {
+    locate_T_and_C_checkBox: "//*[@class='align-right']",
+    locate_continue_button: "//*[@id='continueButton']",
+    locate_your_avios_lbl: '//*[@id="priceOptions"]/h2/span[2]/span[1]',
+    locate_adult_total_price: "[id= 'adultTotalPrice']",
+    locator_youngadult_total_price: "[id= 'youngAdultTotalPrice']",
+    locator_infant_total_price: "[id= 'infantTotalPrice']",
+    locate_avios_per_person: '//span[text()="Avios per person"]/following-sibling::span',
+    locate_Taxes_fees_and_carrier_charges_per_person: '//span[contains(text(),"Taxes, fees and carrier charges")]/following-sibling::span',
+    locate_Price_per_person: '//span[text()="Price per person"]/following-sibling::span',
+    locate_inclusive_total1: '//p[text()="Total"]/..//span[1]',
+    locate_inclusive_total2: '//p[text()="Total"]/..//span[2]',
+    locate_inclusive_total3: '//p[text()="Total"]/..//span[3]',
+    locate_upgrade_options: '#upgradeOptions',
+    locate_change_avios_price_option: "(//input[@value='pcpmPricePlan']/..//span[contains(text(),'Avios')])[2]",
+    locate_total_avios_count: '//*[@id="priceOptions"]/h2/span[2]/span[1]/span',
+    locate_total_avios_countwithPrice: '#TotalRewardUnitsToPay',
+    locate_total_price_heading: '#totalPrice',
+    locate_total_avios: '#milesOrPointsCol',
+    locate_price_per_person:'#price',
+    locate_tfc_per_person:'p#taxes',
+    locate_total_price: 'p#totalPrice',
+    locate_total_summary_block:"//div[@id='TotalSummaryBlock']//div[1]/p",
+    locate_fare_rules_conditions:'.upgradeMsgHeader',
+    locate_info_icon_price_breakdown : "//*/div[@id='TotalSummaryBlock']/div[@class='table-body']/p[@class='mobile-clear']/a",
+    locate_adult_tax_fare : '#adultTaxFare',
+    locate_total_in_popup : "//*/span/span[@class='total-preadult']"
+    }
+}
