@@ -1,30 +1,39 @@
-name: Sample Playwright Cucumber Framework
+name: Playwright Test Automation
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  sample-playwright-cucumber-framework:
+  test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm install
+          node-version: '18'  # Specify the Node.js version you need
 
-      - name: Execute All Tests
-        run:
-          npx cross-env PLAYWRIGHT_HEADLESS=false NODE_ENV=ecp-regression3.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js --tags @donationNoThanks
-          browser=chrome npm run cucumber -- --tags="@test" --parallel=5
-          node cucumber.config.js
-      
-      - name: Archive Test Result
-        uses: actions/upload-artifact@v4
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Playwright tests
+        run: npm run test
+
+      - name: Generate Allure report
+        run: npm run report:allure:generate
+
+      - name: Upload Allure report to GitHub artifacts
+        uses: actions/upload-artifact@v3
         with:
-          name: Result
-          path: reports/
+          name: allure-report
+          path: allure-report/
+
+      - name: Clean up test results
+        run: npm run deletereports:windows || true
