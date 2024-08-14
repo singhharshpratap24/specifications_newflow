@@ -18,7 +18,8 @@ jobs:
       - run: npm install
 
       - name: Execute All Tests
-        run: | 
+        run:
+          npx cross-env PLAYWRIGHT_HEADLESS=false NODE_ENV=ecp-regression3.baplc.com npx cucumber-js --config cucumber.config.js --require src/step_definitions/**/*.js --tags @donationNoThanks
           browser=chrome npm run cucumber -- --tags="@test" --parallel=5
           node cucumber.config.js
       
