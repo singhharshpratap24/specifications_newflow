@@ -18,4 +18,4 @@ jobs:
         run: npm install
 
       - name: Run Playwright tests
-        run: npx cross-env PLAYWRIGHT_HEADLESS=true NODE_ENV=ecp-regression1.baplc.com ./node_modules/.bin/cucumber-js --config jenkins_cucumber.config.js src/features/FlightSelling/HomPage.feature
+        run: npx cross-env PLAYWRIGHT_HEADLESS=true NODE_ENV=ecp-regression1.baplc.com ./node_modules/.bin/cucumber-js --config cucumber.config.js src/features/FlightSelling/HomPage.feature
