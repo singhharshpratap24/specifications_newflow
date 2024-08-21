@@ -1,12 +1,6 @@
 name: Playwright Test Automation
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   test:
@@ -24,16 +18,4 @@ jobs:
         run: npm install
 
       - name: Run Playwright tests
-        run: npm run test
-
-      - name: Generate Allure report
-        run: npm run report:allure:generate
-
-      - name: Upload Allure report to GitHub artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: allure-report
-          path: allure-report/
-
-      - name: Clean up test results
-        run: npm run deletereports:windows || true
+        run: npm run Regression
