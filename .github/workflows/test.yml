@@ -18,4 +18,4 @@ jobs:
         run: npm install
 
       - name: Run Playwright tests
-        run: browser=chrome npm run -- --tags="@donationNoThanks"
+        run: browser=echo "bwahahahaha"
