@@ -17,4 +17,7 @@ jobs:
         run: npm install
 
       - name: Run Playwright tests
-        run: echo "bwahahahaha"
+        run: npm run Regression:headless
+
+      - name: genereate HTML report
+        run: npm run report:cucumberHTML
