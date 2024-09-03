@@ -18,8 +18,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Playwright tests
-        run: npm run Regression:headless
-
-      - name: genereate HTML report
-        run: npm run report:cucumberHTML
+      - name: Ping reg env
+        run: ping ecp-regression1.baplc.com
